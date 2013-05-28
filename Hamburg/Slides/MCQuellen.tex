@@ -1,0 +1,37 @@
+\documentclass{beamer}
+
+\usetheme{AnnArbor}
+\setbeamertemplate{footline} {
+  % \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\hspace*{2ex}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.25ex,dp=1ex,center]{title
+        in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate\hspace*{2ex}
+   \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\beamertemplatenavigationsymbolsempty
+
+\usepackage[german]{babel}
+
+% Title etc
+\title{Masterclass Teilchenphysik}
+\author{Matthias~Schr\"oder}
+
+% pdflatex packages
+\hypersetup{bookmarks=true}
+\hypersetup{unicode=true}
+\hypersetup{pdftitle={Masterclass Teilchenphysik}}
+\hypersetup{pdfauthor={Matthias Schr\"oder}}
+\hypersetup{bookmarks=true}
+
+
+\begin{document}
+\input{MCAdditionalQuellen.tex}
+\end{document}

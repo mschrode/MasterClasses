@@ -1,0 +1,1410 @@
+\documentclass{beamer}
+
+\usetheme{AnnArbor}
+\setbeamertemplate{footline} {
+  % \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\hspace*{2ex}\insertshortauthor~(UHH)
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.25ex,dp=1ex,center]{title
+        in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.33\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertshortdate\hspace*{2ex}
+   \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\beamertemplatenavigationsymbolsempty
+
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[german]{babel}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{xspace}
+
+
+% New commands
+\newcommand{\tev}{\ensuremath{\;\text{Te}\kern-0.06667em\text{V}}\xspace}
+\newcommand{\gev}{\ensuremath{\;\text{Ge}\kern-0.06667em\text{V}}\xspace}
+\newcommand{\mev}{\ensuremath{\;\text{Me}\kern-0.06667em\text{V}}\xspace}
+\newcommand{\kev}{\ensuremath{\;\text{ke}\kern-0.06667em\text{V}}\xspace}
+\newcommand{\ev}{\ensuremath{\;\text{e}\kern-0.06667em\text{V}}\xspace}
+\newcommand{\km}{\ensuremath{\;\text{km}}\xspace}
+\newcommand{\m}{\ensuremath{\;\text{m}}\xspace}
+\newcommand{\cm}{\ensuremath{\;\text{cm}}\xspace}
+\newcommand{\mm}{\ensuremath{\;\text{mm}}\xspace}
+\newcommand{\hour}{\ensuremath{\;\text{h}}\xspace}
+\newcommand{\second}{\ensuremath{\;\text{s}}\xspace}
+\newcommand{\kg}{\ensuremath{\;\text{kg}}\xspace}
+\newcommand{\tons}{\ensuremath{\;\text{t}}\xspace}
+\newcommand{\tesla}{\ensuremath{\;\text{T}}\xspace}
+\newcommand{\kelvin}{\ensuremath{\;\text{K}}\xspace}
+\newcommand{\nbinv}{\ensuremath{\;\text{nb}^{-1}}\xspace}
+\newcommand{\pbinv}{\ensuremath{\;\text{pb}^{-1}}\xspace}
+\newcommand{\fbinv}{\ensuremath{\;\text{fb}^{-1}}\xspace}
+\newcommand{\znull}{\ensuremath{Z^{0}}\xspace}
+\newcommand{\ca}{ca.\ }
+\newcommand{\zb}{z.\,B.\ }
+
+
+\graphicspath{{../CommonGraphics/}}
+
+
+% Title etc
+\title[Masterclass Teilchenphysik]{Die Bausteine des Universums}
+\subtitle{Masterclass Teilchenphysik --- Carl-von-Ossietzky-Gymnasium Hamburg}
+\author[Arne Dr\"ager, Matthias Schr\"oder]{Arne Dr\"ager, Matthias Schr\"oder}
+\institute[Universit\"at Hamburg]{}
+\date[29. Mai 2013]{29. Mai 2013}
+\titlegraphic{
+\vskip1cm
+\includegraphics[height=1.2cm]{logo/logo-tw-4c}
+\hskip1cm
+\includegraphics[height=1.2cm]{logo/UHH-Logo_2010_Farbe_CMYK}}
+
+% pdflatex packages
+\hypersetup{bookmarks=true}
+\hypersetup{unicode=true}
+\hypersetup{pdftitle={Masterclass Teilchenphysik}}
+\hypersetup{pdfauthor={Matthias Schr\"oder}}
+\hypersetup{bookmarks=true}
+
+
+\begin{document}
+% ==================================================
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+% ==================================================
+\section{Einleitung}
+% --------------------------------------------------
+{\usebackgroundtemplate{\includegraphics[height=\paperheight]{cosmology/oriondeepwide_gendler_f.jpg}}
+  
+  % --------------------------------------------------
+  \begin{frame}
+    \begin{center}
+      \visible<3->{\textcolor{white}{\Large Teilchenphysik}}
+      \vskip0.3cm
+      \visible<3->{\textcolor{white}{\Large stellt}}
+      \vskip0.4cm
+      \visible<2->{\textcolor{white}{\Huge FRAGEN}}
+    \end{center}
+  \end{frame}
+
+  \subsection{Fragen der Teilchenphysik}  
+  % --------------------------------------------------
+  \begin{frame}[t]
+    \frametitle{Fragen der Teilchenphysik}
+    \vskip0.5cm
+    \begin{itemize}
+    \item[~]<2-> \textcolor{white}{Woraus besteht das Universum? Woraus bestehen wir?}
+      \begin{itemize}
+      \item[~]<2-> \textcolor{white}{Grundbausteine der Materie}
+      \end{itemize}
+    \item[~]<3-> \textcolor{white}{Wie funktioniert das Universum?}
+      \begin{itemize}
+      \item[~]<3-> \textcolor{white}{Wechselwirkungen}
+      \end{itemize}
+    \item[~]<4-> \textcolor{white}{Wie ist das Universum entstanden?}
+      \begin{itemize}
+      \item[~]<4-> \textcolor{white}{Zeitliche Entwicklung}
+      \end{itemize}
+    \end{itemize}
+    \only<2>{
+      \begin{center}
+        \vskip-1cm
+        \includegraphics[width=0.4\textwidth]{eyecandy/LEGO-Bricks.pdf}
+      \end{center}
+    }
+    \only<3>{
+      \vskip-0.2cm
+      \begin{columns}
+        \begin{column}{0.3\textwidth}
+          \centering
+          \includegraphics[width=0.8\textwidth]{eyecandy/LEGO-Bricks.pdf}
+        \end{column}
+        \begin{column}{0.025\textwidth}
+          \textbf{\textcolor{white}{\Large +}}
+        \end{column}
+        \begin{column}{0.25\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{eyecandy/Glue.png}
+        \end{column}
+        \begin{column}{0.025\textwidth}
+          \textbf{\textcolor{white}{\Large =}}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+          \centering
+          \includegraphics[width=0.9\textwidth]{eyecandy/LEGO-DNS.jpg}
+        \end{column}
+      \end{columns}
+    }
+    \only<5->{
+      \vskip1cm
+      \begin{columns}
+        \begin{column}{0.15\textwidth}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+          \begin{block}{}
+            \centering \alert{\Large Was sind die fundamentalen
+                Bausteine und Kr\"afte im Universum?}
+          \end{block}
+        \end{column}
+        \begin{column}{0.15\textwidth}
+        \end{column}
+      \end{columns}
+    }
+  \end{frame}
+ 
+  \subsection{Unser Bild vom Universum}
+   % --------------------------------------------------
+   \begin{frame}
+     \frametitle{Unser Bild vom Universum}
+     \begin{center}
+       \includegraphics[width=0.7\textwidth]{cosmology/EvolutionOfTheUniverse5.jpg}
+     \end{center}
+   \end{frame}
+   
+   % --------------------------------------------------
+   \begin{frame}
+     \frametitle{Unser Bild vom Universum}
+     \begin{center}
+       \visible<2->{
+         \begin{block}{Rotation von Galaxien}
+           \begin{columns}
+             \begin{column}{0.35\textwidth}
+               \begin{itemize}
+               \item Zu wenig sichtbare Materie
+               \item<3-> \alert{Dunkle Materie}
+               \item[~] ~
+               \end{itemize}
+             \end{column}
+             \begin{column}{0.65\textwidth}
+               \centering
+               \vskip-0.5cm
+               \includegraphics[height=0.35\textheight]{cosmology/DarkMatter_GalaxyRotation.jpg}
+             \end{column}
+           \end{columns}
+         \end{block}
+       }
+       \visible<4->{
+         \begin{block}{Expansion des Universums}
+           \begin{columns}
+             \begin{column}{0.35\textwidth}
+               \begin{itemize}
+               \item<5-> Beschleunigte Expansion
+               \item<6-> \alert{Dunkle Energie}
+               \item[~] ~
+               \end{itemize}
+             \end{column}
+             \begin{column}{0.65\textwidth}
+               \centering
+               \vskip-0.5cm
+               \includegraphics[height=0.35\textheight]{cosmology/UniverseExpansion.jpg}
+             \end{column}
+           \end{columns}
+         \end{block}
+       }
+     \end{center}
+   \end{frame}
+
+   % --------------------------------------------------
+   \begin{frame}
+     \frametitle{Unser Bild vom Universum}
+     \begin{center}
+       \includegraphics[width=0.45\textwidth]{cosmology/MatterContentOfTheUniverse.jpg}
+     \end{center}
+     \pause
+     \begin{center}
+       \begin{block}{}
+         \centering
+         {\large LHC: \alert{Wir beginnen \textbf{jetzt}, die weiteren $96\%$ zu erforschen!}}
+       \end{block}
+     \end{center}
+   \end{frame}
+}
+
+\section{\"Ubersicht}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{\"Ubersicht}
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 1}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Wie arbeiten Teilchenphysiker?
+      \item Was wissen wir \"uber Elementarteilchen?
+      \item Was wissen wir \textbf{nicht} \"uber Elementarteilchen?
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Matthias}
+    \end{column}
+  \end{columns}
+  \vskip0.5cm
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 2}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Erforschung von Elementarteilchen
+        \begin{itemize}
+        \item Wie kann man sie erzeugen?
+        \item Wie kann man sie sichtbar machen?
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Arne}
+    \end{column}
+  \end{columns}
+  \begin{center}
+    ---------------------------------   Mittagspause   ---------------------------------
+  \end{center}
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 3}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Selber forschen!
+        \begin{itemize}
+        \item Wie kann man sie erzeugen?
+        \item Wie kann man sie sichtbar machen?
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Alle zusammen}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Regeln}
+  \begin{center}
+    {\Huge FRAGEN stellen!}
+  \end{center}
+\end{frame}
+
+\section{Naturwissenschaftliches Arbeiten}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Wie erforscht man denn das Universum?}
+  \vskip-0.5cm
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \begin{flushleft}
+        oder: Wie arbeiten Teilchenphysiker?
+      \end{flushleft}
+      \begin{center}
+        \only<1-2>{
+          \includegraphics[width=\textwidth]{eyecandy/Wiese.pdf}
+        }
+        \only<3->{
+          \includegraphics[width=\textwidth]{eyecandy/Wiese-Modell.pdf}
+        }
+      \end{center}
+    \end{column}
+    \begin{column}{0.45\textwidth}
+      \visible<2->{
+        \begin{center}
+          \alert{Theoretischer Physiker}\\
+        \end{center}
+        \begin{center}
+          \includegraphics[height=3cm]{eyecandy/Sheldon}\\
+        \end{center}
+        \alert{Entwickelt Modelle}
+      }
+      \visible<3->{
+        \begin{itemize}
+        \item Mathemat. Formulierung
+          \begin{itemize}
+          \item z.B. Standardmodell
+          \end{itemize}
+        \item Wenige Grundannahmen
+          \begin{itemize}
+          \item z.B. Energieerhaltung
+          \end{itemize}
+        \end{itemize}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Wie erforscht man denn das Universum?}
+  \vskip-0.6cm
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \begin{flushleft}
+        oder: Wie arbeiten Teilchenphysiker?
+      \end{flushleft}
+      \begin{center}
+        \only<1>{
+          \includegraphics[width=\textwidth]{eyecandy/Wiese-Modell.pdf}
+        }
+        \only<2->{
+          \includegraphics[width=\textwidth]{lhc/CMS_0712023_01-A4-at-144-dpi.jpg}
+        }
+      \end{center}
+    \end{column}
+    \begin{column}{0.45\textwidth}
+      \visible<2->{
+        \begin{center}
+          \alert{Experimentalphysiker}\\
+        \end{center}
+        \begin{center}
+          \includegraphics[height=3cm]{eyecandy/Lennard}\\
+        \end{center}
+      }
+      \visible<3->{
+        \vskip-0.3cm
+        \begin{itemize}
+        \item \"Uberpr\"uft Modelle
+        \item Vervollst\"andigt Modelle
+          \begin{itemize}
+          \item Misst z.B. Teilchenmassen
+          \end{itemize}
+        \item Sucht nach Unbekanntem
+          \begin{itemize}
+          \item z.B. Dunkle Materie
+          \end{itemize}
+        \end{itemize}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \begin{center}
+    {\Huge Experiment}
+  \end{center}
+  %\vskip0.5cm
+   \begin{block}{}
+     \begin{columns}
+       \begin{column}{0.3\textwidth}
+         \centering
+         \includegraphics[height=0.3\textheight]{eyecandy/Lennard}
+       \end{column}
+       \begin{column}{0.7\textwidth}
+         {\large Frage:}
+         \vskip0.2cm
+         \alert{``Welcher geometrische K\"orper verbirgt\\ sich in dem Knetball?''}
+       \end{column}
+     \end{columns}
+   \end{block}
+\end{frame}
+
+
+% ==================================================
+\section{Gr\"o\ss{}enordnungen}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Wie gro\ss{} sind Elementarteilchen?}
+  \vskip-0.2cm
+  \begin{columns}[T]
+    \begin{column}{0.25\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{matter/VKZQ_Kristall.png}
+    \end{column}
+    \begin{column}{0.75\textwidth}
+      \centering
+      \includegraphics[width=0.5\textwidth]{matter/schokolade.jpg}\\
+      \vskip0.2cm
+      Materialphysik $\approx1\cm$
+      \visible<2->{
+        \begin{columns}
+          \begin{column}{0.1\textwidth}
+          \end{column}
+          \begin{column}{0.2\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{matter/Lupe.png}
+          \end{column}
+          \begin{column}{0.7\textwidth}
+            \alert{Wir schauen genauer hin\ldots}
+          \end{column}
+        \end{columns}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Wie gro\ss{} sind Elementarteilchen?}
+  \vskip-0.2cm
+  \begin{columns}[T]
+    \begin{column}{0.25\textwidth}
+      \centering
+      \only<1>{
+        \includegraphics[width=\textwidth]{matter/VKZQ_Molekuel.png}
+      }
+      \only<2->{
+        \includegraphics[width=\textwidth]{matter/VKZQ_Atom.png}
+      }
+    \end{column}
+    \begin{column}{0.75\textwidth}
+      \centering
+      Molek\"ule $\approx10^{-9}\m$, Atome $\approx10^{-10}\m$
+      % \includegraphics[width=0.7\textwidth]{matter/periodensystem.png}\\
+      \includegraphics[width=0.7\textwidth]{matter/quantum_corral_nise.jpg}\\
+      \vskip0.2cm
+      \begin{block}{}
+        \centering
+        \alert{Atome sind Bausteine f\"ur alle makroskopischen Objekte}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Wie gro\ss{} sind Elementarteilchen?}
+  \vskip-0.2cm
+  \begin{columns}[T]
+    \begin{column}{0.25\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{matter/VKZQ_Atom.png}
+    \end{column}
+    \begin{column}{0.75\textwidth}
+      \centering
+      \alert{Wie gro\ss{} sind $10^{-10}\m$?}
+      \begin{columns}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+          \centering
+          \includegraphics[width=0.6\textwidth]{matter/Kristall.png}\\
+          Kristall
+        \end{column}
+        \begin{column}{0.1\textwidth}
+          \centering
+          {\Huge :}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+          \centering
+          \includegraphics[width=0.6\textwidth]{matter/Atom.png}\\
+          Atom
+        \end{column}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+      \end{columns}
+      \begin{center}
+        \visible<2->{\Huge =}
+      \end{center}
+      \begin{columns}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+          \centering
+          \visible<2->{
+            \includegraphics[width=\textwidth]{matter/DeutschlandMitMassstab.png}
+          }
+        \end{column}
+        \begin{column}{0.1\textwidth}
+          \centering
+          \visible<2->{\Huge :}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+          \centering
+          \only<2>{
+            {\Huge ?}
+          }
+          \only<3->{
+            \includegraphics[width=\textwidth]{matter/AmeiseMitMassstab.png}
+          }
+        \end{column}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+      \end{columns}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Wie gro\ss{} sind Elementarteilchen?}
+  \vskip-0.2cm
+  \begin{columns}[T]
+    \begin{column}{0.25\textwidth}
+      \centering
+      \only<1>{
+        \includegraphics[width=\textwidth]{matter/VKZQ_Atom.png}
+      }
+      \only<2>{
+        \includegraphics[width=\textwidth]{matter/VKZQ_Kern.png}
+      }
+      \only<3->{
+        \includegraphics[width=\textwidth]{matter/VKZQ_Proton.png}
+      }
+    \end{column}
+    \begin{column}{0.75\textwidth}
+      \vskip1cm
+      \begin{columns}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+        \begin{column}{0.2\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{matter/Lupe.png}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+          \alert{Wir schauen genauer hin\ldots}
+        \end{column}
+      \end{columns}
+      \vskip1cm
+      \begin{columns}
+        \begin{column}{0.2\textwidth}
+        \end{column}
+        \begin{column}{0.6\textwidth}
+          \visible<3->{
+            \begin{block}{}
+              \centering
+              Proton, Neutron $\approx10^{-15}\m$\\
+              \textcolor{red}{\large Hier f\"angt Teilchenphysik an!}
+            \end{block}
+          }
+        \end{column}
+        \begin{column}{0.2\textwidth}
+        \end{column}
+      \end{columns}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Wie gro\ss{} sind Elementarteilchen?}
+  \vskip-0.2cm
+  \begin{columns}[T]
+    \begin{column}{0.25\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{matter/VKZQ_Proton.png}
+    \end{column}
+    \begin{column}{0.75\textwidth}
+      \centering
+      \alert{Wie gro\ss{} sind $10^{-15}\m$?}
+      \begin{columns}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+          \centering
+          \includegraphics[width=0.6\textwidth]{matter/Kristall.png}\\
+          Kristall
+        \end{column}
+        \begin{column}{0.1\textwidth}
+          \centering
+          {\Huge :}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+          \centering
+          \includegraphics[width=0.6\textwidth]{matter/Proton.png}\\
+          Proton
+        \end{column}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+      \end{columns}
+      \begin{center}
+        \visible<2->{\Huge =}
+      \end{center}
+      \begin{columns}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+          \centering
+          \only<2>{
+            {\Huge ?}
+          }
+          \only<3->{
+            \includegraphics[width=\textwidth]{matter/ErdeSonne.png}
+          }
+        \end{column}
+        \begin{column}{0.1\textwidth}
+          \centering
+          \visible<2->{\Huge :}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+          \centering
+          \visible<2->{
+            \includegraphics[width=\textwidth]{matter/AmeiseMitMassstab.png}
+          }
+        \end{column}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+      \end{columns}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Wie gro\ss{} sind Elementarteilchen?}
+  \vskip-0.2cm
+  \begin{columns}[T]
+    \begin{column}{0.25\textwidth}
+      \centering
+      \only<1>{
+        \includegraphics[width=\textwidth]{matter/VKZQ_Proton.png}
+      }
+      \only<2->{
+        \includegraphics[width=\textwidth]{matter/VKZQ_Alles.png}
+      }
+    \end{column}
+    \begin{column}{0.75\textwidth}
+      \vskip1cm
+      \begin{columns}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+        \begin{column}{0.2\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{matter/Lupe.png}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+          \alert{Wir schauen genauer hin\ldots}
+        \end{column}
+      \end{columns}
+      \vskip0.5cm
+      \begin{columns}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+        \begin{column}{0.8\textwidth}
+          \visible<2->{
+            \begin{block}{}
+              \centering
+              Quarks, Elektronen
+              \vskip0.3cm
+              \textcolor{red}{\Huge Elementarteilchen}
+            \end{block}
+            \begin{itemize}
+            \item $<10^{-18}\m$ \visible<3->{(experimentell)}
+            \item<3-> punktf\"ormig (theoretisch)
+            \end{itemize}
+          }
+        \end{column}
+        \begin{column}{0.1\textwidth}
+        \end{column}
+      \end{columns}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+% ==================================================
+\section{Das Standardmodell}
+\subsection{Elementarteilchen}
+% --------------------------------------------------
+\begin{frame}[t]
+  \frametitle{Sichtbare Materie}
+  \begin{itemize}
+  \item Woraus besteht die sichtbare Welt?
+  \item Woraus bestehen wir?
+  \end{itemize}
+  \vskip0.3cm
+  \begin{columns}
+    \begin{column}{0.25\textwidth}
+      \vskip1.5cm
+      \centering
+      \visible<4->{
+        \includegraphics[width=0.8\textwidth]{matter/Proton.png}
+      }
+    \end{column}
+    \begin{column}{0.55\textwidth}
+      \only<1-6>{{\huge Atome}}
+      \only<7>{\textcolor{red}{\huge Elementarteilchen}}
+      \vskip0.1cm
+      \begin{itemize}
+      \item<2-> Atomh\"ulle
+        \begin{itemize}
+        \item<3-> \textcolor{red}{Elektronen}: $Q=-1$
+        \end{itemize}
+      \item<2-> Atomkern
+        \begin{itemize}
+        \item<4-> Protonen: $Q=+1$
+          \visible<5->{
+            \begin{center}
+              \begin{tabular}{ll}
+                2 \textcolor{red}{up quarks} & $Q=+2/3$  \\
+                1 \textcolor{red}{down quark}& $Q=-1/3$ \\
+              \end{tabular}
+            \end{center}
+          }
+        \item<4-> Neutronen: $Q=0$
+          \visible<6->{
+            \begin{center}
+              \begin{tabular}{ll}
+                1 \textcolor{red}{up quark} & $Q=+2/3$  \\
+                2 \textcolor{red}{down quarks}& $Q=-1/3$ \\
+              \end{tabular}
+            \end{center}
+          }
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.2\textwidth}
+      \centering
+      \vskip-3cm
+      \hskip-2cm
+      \visible<2->{
+        \includegraphics[width=\textwidth]{matter/Atom.png}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}[t]
+  \frametitle{Sichtbare Materie}
+  \begin{itemize}
+  \item Woraus besteht die sichtbare Welt?
+  \item Woraus bestehen wir?
+  \end{itemize}
+  \vskip0.3cm
+  \begin{columns}
+    \begin{column}{0.25\textwidth}
+      \centering
+      \vskip0.5cm
+      \visible<3->{
+        \includegraphics[width=0.8\textwidth]{sm/Pauli.jpg}\\
+        W.\ Pauli        
+      }
+    \end{column}
+    \begin{column}{0.55\textwidth}
+      \only<1->{\textcolor{white}{\huge Elementarteilchen}}
+      \vskip0.1cm
+      \visible<2->{
+        Neutron ist instabil: $\beta$-Zerfall
+        \begin{equation*}
+          n \rightarrow p + e^{-} \visible<3->{+\textcolor{red}{\bar{\nu}_{e}}}
+        \end{equation*}
+        \only<2>{{\Large Problem:} keine Energieerhaltung!}
+        \only<3->{1932: \textcolor{red}{\Large Neutrino}}
+      }
+    \end{column}
+    \begin{column}{0.2\textwidth}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}[t]
+  \frametitle{Sichtbare Materie}
+  \begin{itemize}
+  \item Woraus besteht die sichtbare Welt?
+  \item Woraus bestehen wir?
+  \end{itemize}
+  \vskip0.3cm
+  \begin{columns}
+    \begin{column}{0.25\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{sm/StandardModel_FirstGeneration.png}
+    \end{column}
+    \begin{column}{0.75\textwidth}
+      \textcolor{red}{\huge 4 Elementarteilchen}
+      \visible<2->{
+        \begin{center}
+          \includegraphics[height=0.25\textheight]{matter/Hamburg_Jungfernstieg.jpg}
+          \hskip0.5cm
+          \includegraphics[height=0.2\textheight]{matter/DNA.png}\\
+          \vskip0.2cm
+          \includegraphics[height=0.23\textheight]{matter/earth.jpg}
+          \hskip0.8cm
+          \includegraphics[height=0.2\textheight]{matter/Volldampf.jpg}
+          \hskip0.8cm
+          \includegraphics[height=0.21\textheight]{matter/Katy-Perry.jpg}
+        \end{center}
+        \begin{flushright}
+          \vskip-0.3cm
+          \textcolor{red}{\large zur Beschreibung der sichtbaren Materie!}
+        \end{flushright}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Weitere Generationen}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Gibt es noch weitere Elementarteilchen?}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{itemize}
+      \item 1936: Ein neues Elementarteilchen
+        \begin{itemize}
+        \item In kosmischer H\"ohenstrahlung
+        \item Instabil ($\mu^{-}\rightarrow e^{-} + \bar{\nu}_{e} + \nu_{\mu}$)
+        \end{itemize}
+      \item Das Myon $\mu^{-}$
+        \begin{itemize}
+        \item Gleiche elektrische Ladung wie $e^{-}$
+        \item 200 mal schwerer als $e^{-}$
+        \end{itemize}
+      \end{itemize}
+      \visible<2->{
+        \begin{columns}
+          \begin{column}{0.1\textwidth}
+          \end{column}
+          \begin{column}{0.4\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{sm/StandardModel_FirstGenerationPlusMuon.png}
+          \end{column}
+          \begin{column}{0.5\textwidth}
+            \begin{center}
+              \textcolor{red}{\Large Myon $\mu^{-}$}\\
+              ``Schweres Elektron''
+            \end{center}
+          \end{column}
+        \end{columns}
+      }
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{sm/KosmischeStrahlung.jpg}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Gibt es noch weitere Elementarteilchen?}
+  \begin{columns}
+    \begin{column}{0.65\textwidth}
+      {\Large Sind das jetzt alle? Nein!}
+      \vskip0.3cm
+      Es gibt noch mehr Elemtarteilchen
+      \begin{itemize}
+      \item Meist \textbf{instabil} und sehr kurzlebig
+        \begin{itemize}
+        \item Nicht in sichtbarer Materie ``verbaut''
+        \end{itemize}
+      \item Oder nahezu \textbf{``unsichtbar''}
+        \begin{itemize}
+        \item Neutrinos
+        \end{itemize}
+      \end{itemize}
+      \vskip0.5cm
+      \begin{block}{}
+        \centering
+        \alert{\Large Erzeugung in Teilchenkollisionen\\ \zb am LHC}
+      \end{block}
+    \end{column}
+    \begin{column}{0.35\textwidth}
+      \centering
+      \includegraphics[width=7cm,angle=90]{sm/CMS_Collision_gen-2007-004_02.jpg}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \begin{center}
+    {\Huge Experiment Teilchenzoo}
+  \end{center}
+  %\vskip0.5cm
+   \begin{block}{}
+     \begin{columns}
+       \begin{column}{0.3\textwidth}
+         \centering
+         \includegraphics[height=0.3\textheight]{eyecandy/Lennard}
+       \end{column}
+       \begin{column}{0.7\textwidth}
+         \alert{``Ordne die Elementarteilchen anhand\\ ihrer Eigenschaften.''}
+       \end{column}
+     \end{columns}
+   \end{block}
+\end{frame}
+
+\subsection{Die bekannten Elementarteilchen}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Die bekannten Elementarteilchen}
+  \vskip-0.8cm
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \only<1-4>{
+          \includegraphics[width=0.95\textwidth]{sm/SM-Table.png}\\
+        }
+        \only<5->{
+          \includegraphics[width=0.95\textwidth]{sm/SM-Table_Antimatter.png}\\
+        }
+      \end{center}
+      \vskip-3cm
+      \visible<3>{
+        \includegraphics[width=0.5\textwidth]{sm/VWKaefer.jpg}\\
+      }
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Ordnung}
+        \begin{itemize}
+        \item Masse
+        \item Quantenzahlen
+          \begin{itemize}
+          \item Z.B.\ Ladung
+          \end{itemize}
+        \end{itemize}
+      \end{block}
+      \visible<2->{
+        \begin{block}{Teilchen der 2. und 3. Generation}
+          \begin{itemize}
+          \item Gleiche Eigenschaften wie 1.
+          \item Aber deutlich schwerer
+            \begin{itemize}
+            \item Instabil
+            \end{itemize}
+          \end{itemize}
+        \end{block}
+      }
+      \visible<5->{
+        \begin{block}{Zu jedem Teilchen: Antiteilchen}
+          \begin{itemize}
+          \item Gleiche Eigenschaften
+          \item Aber entgegengesetzte Ladung
+            \begin{itemize}
+            \item Z.B.\ $e^{-}$ und $e^{+}$
+            \end{itemize}
+          \end{itemize}
+        \end{block}
+      }
+      \vskip-7cm
+      \visible<3>{
+        \includegraphics[width=0.5\textwidth]{sm/QueenMary2.jpg}\\
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\subsection{Fundamentale Kr\"afte}
+% --------------------------------------------------
+\begin{frame}[t]
+  \frametitle{Kr\"afte: Interaktion zwischen den Elementarteilchen}
+  \begin{block}{}
+    \begin{itemize}
+    \item Kr\"afte wirken zwischen \textcolor{red}{geladenen Teilchen}
+    \item Kr\"afte entstehen durch den \textcolor{green}{Austausch von
+        Teilchen (``Bosonen'')}
+    \end{itemize}
+  \end{block}
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{sm/interact.jpg}
+  \end{center}
+  \only<2>{
+    \begin{itemize}
+    \item Anschauliche (und mathematische!) Beschreibung durch ``Feynmandiagramme''
+    \end{itemize}
+  }
+  \only<3->{
+    \begin{itemize}
+    \item Z.B.\ \textcolor{red}{Elektron-Elektron Absto\ss{}ung} durch \textcolor{green}{Photon-Austausch}
+    \item Elektromagnetische Kraft
+    \end{itemize}
+  }
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Fundamentale Kr\"afte}
+  \vskip-0.2cm
+  \begin{block}{Elektromagnetische Kraft}
+   \begin{columns}[T]
+     \begin{column}{0.7\textwidth}
+        \begin{itemize}
+        \item Elektrische Ladung, alle au\ss{}er $\nu$
+        \item Vermittelt durch Photon $\gamma$
+        \item \textit{Chemie, Elektrizit\"at}
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.3\textwidth}
+        \centering
+        \vskip-0.3cm
+        \includegraphics[height=0.22\textheight]{matter/Atom.png}
+      \end{column}
+    \end{columns}
+  \end{block}
+  \pause
+  \begin{block}{Schwache Kraft}
+    \begin{columns}[T]
+      \begin{column}{0.7\textwidth}
+        \begin{itemize}
+        \item Schwache Ladung, alle Teilchen
+        \item Vermittelt durch $W^{\pm}$, \textcolor{red}{$\znull$}
+        \item \textit{Umwandlung von Teilchensorten ($\beta$-, $\mu$-Zerfall)}
+        \end{itemize}
+      \end{column}
+      \begin{column}{0.3\textwidth}
+        \centering
+        \vskip-0.3cm
+        \includegraphics[height=0.22\textheight]{sm/BetaZerfall.pdf}
+      \end{column}
+    \end{columns}
+  \end{block}
+  \pause
+  \begin{block}{Starke Kraft}
+    \begin{columns}[T]
+      \begin{column}{0.7\textwidth}
+        \begin{itemize}
+        \item Farbladung (drei Zust\"ande \textcolor{red}{r}\textcolor{green}{g}\textcolor{blue}{b}), nur Quarks
+        \item Vermittelt durch Gluon $g$
+        \item \textit{Bindung der Quarks in Hadronen: $qqq$, $q\bar{q}$}
+       \end{itemize}
+      \end{column}
+      \begin{column}{0.3\textwidth}
+        \centering
+        \vskip-0.3cm
+        \includegraphics[height=0.22\textheight]{matter/Proton.png}
+      \end{column}
+    \end{columns}
+  \end{block}
+\end{frame}
+
+\subsection{Zusammenfassung}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Das Standardmodell der Teilchenphysik}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \includegraphics[width=0.9\textwidth]{sm/sm_blocks_wo_higgs.jpg}
+      \end{center}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item Einheitliche Beschreibung der
+        \begin{itemize}
+        \item fundamentalen Teilchen und ihrer Eigenschaften
+        \item fundamentalen Kr\"afte (ausgenommen
+          Gravitation)
+        \end{itemize}
+      \item Beruht auf
+        \begin{itemize}
+        \item Spezieller Relativit\"atstheorie
+        \item Quantenmechanik
+        \end{itemize}
+      \item Genaueste Beschreibung der Natur
+      \end{itemize}
+   \end{column}
+  \end{columns}
+  \pause
+  \vskip0.5cm
+  \begin{block}{}
+    \begin{center}
+      \textit{``Das Standardmodell funktioniert frustrierend gut.''}
+      {\scriptsize R.~Heuer, 2011}
+    \end{center}
+  \end{block}
+\end{frame}
+
+
+% ==================================================
+\section{Offene Fragen}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Woher bekommen die Teilchen Masse?}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{itemize}
+      \item Standardmodell erlaubt keine Massen
+      \item \alert{Elementarteilchen haben Massen!}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{center}
+        \includegraphics[width=0.4\textwidth]{sm/QueenMary2.jpg}
+        \includegraphics[width=0.5\textwidth]{sm/VWKaefer.jpg}\\
+        $m_{t} \approx340\,000 \cdot m_{e}$
+      \end{center}
+    \end{column}
+  \end{columns}
+  \pause
+  \vskip0.5cm
+  \begin{columns}
+   \begin{column}{0.5\textwidth}
+      \begin{block}{Higgs-Mechanismus}
+        \begin{itemize}
+        \item Hintergrundfeld im Universum
+        \item Teilchen werden ``abgebremst''
+        \item[$\Rightarrow$] \alert{Masse}
+        \end{itemize}
+      \end{block}
+      \vskip0.2cm
+      \large Vorhersage: \textcolor{red}{Higgs Teilchen}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \centering
+      \includegraphics[width=0.9\textwidth]{sm/higgs_swim.jpg}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{Die Higgs-Story}
+  \vskip-0.2cm
+  \begin{columns}[T]
+    \begin{column}{0.2\textwidth}
+      \centering
+      \includegraphics[width=0.8\textwidth]{sm/PeterHiggs.jpg}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item \"Uber 40 Jahre
+      \item<2-> Viele Beschleunigerexperimente
+      \item<3-> Ungez\"ahlte Teilchenphysiker
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \centering
+      \visible<2->{
+        \includegraphics[width=0.9\textwidth]{lhc/lhc_air.jpg}
+      }
+    \end{column}
+  \end{columns}
+  \vskip-0.8cm
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \centering
+      \visible<4->{
+        \includegraphics[width=0.9\textwidth]{sm/HiggsGammaGamma.png}\\
+      }
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \begin{flushright}
+        \visible<3->{
+          \includegraphics[width=0.8\textwidth]{lhc/cern_first_physics_lhc_10-620x.jpg}
+        }
+      \end{flushright}
+      \centering
+      \visible<4->{
+        \includegraphics[width=0.9\textwidth]{lhc/HiggsJoe.jpg}
+      }
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \vskip0.3cm
+      \centering
+      \visible<4->{
+        \includegraphics[width=0.9\textwidth]{sm/HiggsMGammaGamma.png}\\
+        4. July 2012
+      }
+    \end{column}
+  \end{columns}
+  \visible<4->{
+    \begin{block}{}
+      \centering
+      \alert{\Large Eindeutige Hinweise auf ein Higgs-artiges Teilchen!}
+    \end{block}
+  }
+\end{frame}
+
+% --------------------------------------------------
+\begin{frame}[t]
+  \vskip0.4cm
+  \begin{columns}
+   \begin{column}{0.2\textwidth}
+     \centering
+      \includegraphics[height=1.5cm]{eyecandy/Sheldon}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      \alert{\Large Offene Fragen der Teilchenphysik}
+    \end{column}
+    \begin{column}{0.2\textwidth}
+    \end{column}
+  \end{columns}
+  \vskip0.5cm
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \begin{itemize}
+        \pause
+      \item Woher bekommen Teilchen ihre Massen?
+        \begin{itemize}
+        \item Haben wir das Higgs-Teilchen gefunden?
+        \end{itemize}
+        \pause
+      \item Warum gibt es mehr Materie als Antimaterie?
+        \pause
+      \item Was ist dunkle Materie?
+      \item Kann man die Gravitation durch Teilchenaustausch beschreiben?
+        \begin{itemize}
+        \item Gibt es Supersymmetrie?
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{cosmology/MatterContentOfTheUniverse.jpg}
+    \end{column}
+  \end{columns}
+  \pause
+  \begin{block}{}
+    \begin{columns}
+      \begin{column}{0.2\textwidth}
+        \centering
+        \includegraphics[height=1.5cm]{eyecandy/Lennard}
+      \end{column}
+      \begin{column}{0.7\textwidth}
+        \centering
+        \alert{\Large Antworten an Teilchenbeschleunigern\\
+          --- \textbf{jetzt am LHC} ---} 
+      \end{column}
+      \begin{column}{0.1\textwidth}
+      \end{column}
+    \end{columns}
+  \end{block}
+\end{frame}
+
+
+\section{\"Ubersicht}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{\"Ubersicht}
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 1}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Wie arbeiten Teilchenphysiker?
+      \item Was wissen wir \"uber Elementarteilchen?
+      \item Was wissen wir \textbf{nicht} \"uber Elementarteilchen?
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Matthias}
+    \end{column}
+  \end{columns}
+  \vskip0.5cm
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 2}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Erforschung von Elementarteilchen
+        \begin{itemize}
+        \item Wie kann man sie erzeugen?
+        \item Wie kann man sie sichtbar machen?
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Arne}
+    \end{column}
+  \end{columns}
+  \begin{center}
+    ---------------------------------   Mittagspause   ---------------------------------
+  \end{center}
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 3}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Selber forschen!
+        \begin{itemize}
+        \item Wie kann man sie erzeugen?
+        \item Wie kann man sie sichtbar machen?
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Alle zusammen}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\input{MCMainExperimentalMethods.tex}
+
+\section{\"Ubersicht}
+% --------------------------------------------------
+\begin{frame}
+  \frametitle{\"Ubersicht}
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 1}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Wie arbeiten Teilchenphysiker?
+      \item Was wissen wir \"uber Elementarteilchen?
+      \item Was wissen wir \textbf{nicht} \"uber Elementarteilchen?
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Matthias}
+    \end{column}
+  \end{columns}
+  \vskip0.5cm
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 2}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Erforschung von Elementarteilchen
+        \begin{itemize}
+        \item Wie kann man sie erzeugen?
+        \item Wie kann man sie sichtbar machen?
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Arne}
+    \end{column}
+  \end{columns}
+  \begin{center}
+    ---------------------------------   Mittagspause   ---------------------------------
+  \end{center}
+  \begin{columns}
+    \begin{column}{0.05\textwidth}
+      \centering
+      \alert{\Huge 3}
+    \end{column}
+    \begin{column}{0.68\textwidth}
+      \begin{itemize}
+      \item Selber forschen!
+        \begin{itemize}
+        \item Wie kann man sie erzeugen?
+        \item Wie kann man sie sichtbar machen?
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.27\textwidth}
+      \centering
+      \alert{Alle zusammen}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\input{MCMainZ0Measurement.tex}
+
+
+\section{Anhang}
+\input{MCAdditionalQuellen.tex}
+
+\end{document}
